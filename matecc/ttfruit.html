@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>天天果园-水果网购|生鲜</title>
+  <link rel="stylesheet" href="css/fruit_vip.css">
+</head>
+<body>
+  <div id="container">
+    <h4 class='title'>会员登录</h4>
+    <!--下左 : 图片-->
+    <p>
+      <img src="huiyuan.jpg">
+      <a href="#">会员注册&gt;</a>
+    </p>
+    <!--下右 : 登陆-->
+    <div id='login'>
+      <form action="login" method='post'>
+        <!--手机-->
+        <div class='form-line'>
+          <p>手机号</p>
+          <div>
+            <input type="text" name='pn' class='form-control'>
+          </div>
+        </div>
+        <!--密码-->
+        <div class='form-line'>
+          <p>密码</p>
+          <div>
+            <input type="password" name='pwd' class='form-control'>
+          </div>
+        </div>
+        <!--记住密码-->
+        <div class='form-line'>
+          <p></p>
+          <div>
+            <p>
+              <a href="#">忘记密码?</a>
+              <a href="#">快捷登录</a>
+            </p>
+            <input type="checkbox" name='isSaved' 
+            class='isSaved' id='save'>
+            <label for='save'>记住密码</label>
+          </div>
+        </div>
+        <!--登陆 & 注册会员-->
+        <div class='form-line'>
+          <p></p>
+          <div>
+            <a href="#" class='register'>注册会员
+            </a>
+            <input type="submit" value='登录' class='btnlogin'>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

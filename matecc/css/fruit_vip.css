@@ -1,0 +1,121 @@
+/*标题！！*/
+body,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+#container{
+    width:990px;
+    margin:20px auto;
+    overflow:hidden;
+}
+#container h4.title{
+    color:#adadad;
+    border-bottom:1px solid #adadad;
+    padding-bottom:20px;
+    font-weight:normal;
+    margin-bottom:20px;
+}
+
+/*     下左   :   图片     */
+#container>p{
+    float:left;
+    /*相对定位:配合a标记*/
+    position:relative;
+}
+#container>p>a{
+    position:absolute;
+    left:185px;
+    bottom:30px;
+    width:130px;
+    height:40px;
+    border:1px solid #64a131;
+    box-sizing:border-box;
+    border-radius:5px;
+    text-align:center;
+    line-height:40px;
+    text-decoration:none;
+    color:#64a131;
+    font-size:18px;
+}
+/*  下右  ：登陆    */
+#login{
+    float:right;
+    margin-top:75px;
+}
+#login .form-line{
+    overflow:hidden;
+    margin-bottom:30px;
+}
+#login .form-line>p{
+    float:left;
+    margin:0;
+    color:#808080;
+    width:64px;
+    text-align:right;
+    margin-right:42px;
+    line-height:40px;
+    height:40px;
+}
+#login .form-line>div{
+    float:left;
+    width:300px;
+}
+
+#login .form-control{
+    box-sizing:border-box;
+    width:300px;
+    height:40px;
+    border:1px solid #ccc;
+    padding-left:10px;
+    padding-right:10px;
+    outline:none;
+}
+#login .form-control:focus{
+    border-color:#64A131;
+    box-shadow:0px 0px 2px #64A131;
+}
+
+#login .form-line>div>p{
+    float:right;
+}
+#login .form-line>div>p a{
+    color:#999;
+}
+#login .form-line .isSaved{
+    width:18px;
+    height:18px;
+    vertical-align:middle;
+}
+#login .form-line a.register{
+    float:right;
+    width:145px;
+    height:40px;
+    border:1px solid #64a131;
+    border-radius:5px;
+    line-height:40px;
+    text-align:center;
+    color:#64a131;
+    font-size:18px;
+    text-decoration:none;
+    box-sizing:border-box;
+}
+
+#login .form-line .btnlogin{
+    width:145px;
+    height:40px;
+    border:none;
+    outline:none;
+    background:#64a131;
+    border-radius:5px;
+    color:#fff;
+    font-size:18px;
+    box-sizing:border-box;
+}
+
+
+
+
+
+
+
+
+
