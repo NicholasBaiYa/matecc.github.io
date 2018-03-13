@@ -1,37 +1,57 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/NicholasBaiYa/matecc.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="en">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-### Markdown
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <title>ACFUN 爱一直在</title>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #xmas {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            pointer-events: none;
+        }
+        body {
+            min-height: 100%;
+            color: #bfbfbf;
+            background: #000;
+        }
+        a {
+            color: #bfbfbf;
+        }
+    </style>
+</head>
 
-```markdown
-Syntax highlighted code block
+<body>
+    <canvas id="xmas"></canvas>
 
-# Header 1
-## Header 2
-### Header 3
+    <h1>Mate丶CC</h1>
+<ul>
+    <li><a href="matecc/ttfruit.html">天天水果登陆界面</a></li>
+    <li></li>
+    <li></li>
+</ul>
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+<script src="matecc/js/canvas.js"></script>
 
-[Link](url) and ![Image](src)
-```
+<script>
+    $.get('/login',{"acc":"root","pass":"123456"},function(res){
+        console.log(res);
+    },'json');
+</script>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+</body>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/NicholasBaiYa/matecc.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</html>
