@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<!-- 页面描述 -->
+	<meta name="Description" content="陕西省渭南市华州区天润驾校" />
+	<!-- 页面关键词 -->
+	<meta name="Keywords" content="陕西省渭南市华州区天润驾校" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="baidu-site-verification" content="cNPo4xOObR" />
+	<!--禁止客户端缓存-->
+	<meta http-equiv="pragma" content="no-cache"/>
+    <title>天润驾校</title>
+	<!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="../public/css/index.css">
+</head>
+<body>
+    <div class="box">
+        <header>
+            <img src="../public/images/header.png" alt="">
+        </header>
+        <h1>推荐流程</h1>
+        <!-- <ul>
+            <li>
+                <div class="text">
+                    <div class="text-1">
+                        <p>第<span>1</span>步</p>
+                    </div>
+                    <div class="text-2">
+                        <p>关注“天润驾校”微信公众号</p>
+                        <br>
+                        &emsp;<span>(已关注的跳过次步骤)</span>   
+                    </div>
+                    <div class="img-1">
+                        <img src="../public/images/img-1.png" alt="">
+                    </div>
+                    <div class="broder-1"></div> 
+                </div>
+            </li>
+            <li>
+                <div class="text">
+                    <div class="text-1">
+                        <p>第<span>2</span>步</p>
+                    </div>
+                    <div class="text-2">
+                        <p>点击微信号【在线服务】-【我要<br>加入】,进行信息注册，注册成功<br>会生成个人专属二维码</p>    
+                    </div>
+                    <div class="broder-1"></div>
+                    <div class="img-1">
+                        <img src="../public/images/img-1.png" alt="">
+                    </div>
+                    
+                </div>
+            </li>
+            <li>
+                <div class="text">
+                    <div class="text-1">
+                        <p>第<span>3</span>步</p>
+                    </div>
+                    <div class="text-2">
+                        <p>将个人专属二维码分享至好友或<br>者朋友圈，邀请好友关注公众<br>号，并在天润驾校报名</p>    
+                    </div>
+                    <div class="img-1">
+                        <img src="../public/images/img-1.png" alt="">
+                    </div>
+                    <div class="broder-1"></div>
+                </div>
+            </li>
+            <li>
+                <div class="text">
+                    <div class="text-1">
+                        <p>第<span>4</span>步</p>
+                    </div>
+                    <div class="text-2">
+                        <p>好友报名成功，推荐人可获得相<br>应现金奖励</p>      
+                    </div>
+                </div>
+            </li>
+        </ul> -->
+        <div class="caption">
+            <h2>
+                奖励说明
+            </h2>
+            <img class="img-2" src="../public/images/img-2.png" alt="">
+        </div>
+        <div class="caption-1">
+            <ul>
+                <li><span>推荐人</span></li>
+                <li><span>奖励￥100</span></li>
+                <li><span>被推荐人A</span></li>
+                <li><span>奖励￥50</span></li>
+                <li><span>被推荐人B</span></li>
+                <li><span>奖励￥30</span></li>
+                <li><span>被推荐人C</span></li>
+            </ul>
+            <img src="../public/images/arrow.png">
+            <img src="../public/images/arrow.png">
+            <img src="../public/images/arrow.png">
+            <img src="../public/images/Star1.png">
+            <img src="../public/images/Star2.png">
+            <img src="../public/images/Star3.png">
+            <img src="../public/images/Star4.png">
+            <img src="../public/images/Star5.png">
+            <div class="textDescription">
+                <p><span>1.</span>推荐人向A推荐成功后，则被推荐人A为推荐人的一级推荐成员，A向B推荐后，则B成为推荐人的二级推荐成员，成为A的一级推荐成员</p>
+                <p><span>2.</span>每个用户的一级推荐可获得100元，二级推荐可获得50元，三级推荐可获得30元</p>
+                <p><span>3.</span>第三级推荐关系产生后将不再统计用户之间的关系</p>
+            </div>
+            <p id="explanation">本活动最终解释权归天润驾校所有</p>
+        </div>
+    </div>
+</body>
+    <script>
+        //designWidth:设计稿的实际宽度值，需要根据实际设置
+        //maxWidth:制作稿的最大宽度值，需要根据实际设置
+        //这段js的最后面有两个参数记得要设置，一个为设计稿实际宽度，一个为制作稿最大宽度，例如设计稿为750，最大宽度为750，则为(750,750);
+        (function(designWidth, maxWidth) {
+            var doc = document,
+            win = window,
+            docEl = doc.documentElement,
+            remStyle = document.createElement("style"),
+            tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                maxWidth = maxWidth || 540;
+                width>maxWidth && (width=maxWidth);
+                var rem = width * 100 / designWidth;
+                remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
+            }
+
+            if (docEl.firstElementChild) {
+                docEl.firstElementChild.appendChild(remStyle);
+            } else {
+                var wrap = doc.createElement("div");
+                wrap.appendChild(remStyle);
+                doc.write(wrap.innerHTML);
+                wrap = null;
+            }
+            //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
+            refreshRem();
+
+            win.addEventListener("resize", function() {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function(e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function(e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
+</html>

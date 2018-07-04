@@ -1,0 +1,258 @@
+/******************************兼容******************************/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{
+    display:block
+}
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+} 
+fieldset,img { 
+    border: 0; 
+} 
+address,caption,cite,code,dfn,em,strong,th,var { 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+ol,ul { 
+    list-style: none; 
+    margin: 0;
+} 
+caption,th { 
+    text-align: left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+    font-weight: normal; 
+    font-size: 100%; 
+} 
+q:before,q:after { 
+    content:”; 
+} 
+abbr,acronym {
+    border: 0; 
+}
+*{
+    margin:0 auto;
+    padding:0px; 
+}
+@font-face {
+    font-family:"微软雅黑";
+    /* src: url("fonts/PingFangSC-Medium.ttf"); */
+}
+
+@font-face {
+    font-family: "微软雅黑";
+    /* src: url("fonts/PingFangSC-Medium.ttf"); */
+}
+body{
+    width: 7.5rem;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+}
+/**************box*********************/
+.box{
+    background-color: rgb(247, 98, 89);
+    padding-bottom: 0.25rem;
+}
+.text{
+    margin-bottom: 0.2rem;
+}
+header img{
+    width: 7.5rem;
+    height: 7.69rem;
+}
+h1,h2{
+    font-size: 0.32rem;
+    text-align: center;
+    color: rgb(99, 99, 99);
+    background-color: rgb(255, 231, 77);
+    border: 1px  none;
+    border-radius:0.34rem;
+    height: 0.48rem;
+    width: 2.38rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.48rem;
+}
+/* .text-1{
+    height: 0.92rem;
+    width: 0.97rem;
+    border-radius:50%;
+    background-color: rgb(255, 231, 77);
+    border: 1px  none;
+    padding-top:0.1rem ;
+    padding-left: 0.05rem
+}
+ul .text-1 p{
+    font-size: 0.32rem;
+    color: rgb(116, 111,96);
+    text-align: center;
+    display: inline;
+}
+ul .text-1 span{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style:oblique;
+    color: rgb(226, 33, 34);
+    font-size: 0.48rem;
+}
+.text{
+    position:relative;
+    height: 1.74rem;
+    padding-top:0.2rem ;
+}
+ul li:first-child .text{
+    height: 1.42rem;
+}
+.text-2 p{
+    font-size: 0.32rem;
+    color: rgb(255, 255, 255);
+    display: inline;
+}
+.text-2 span{
+    font-size: 0.32rem;
+    color: rgba(255, 255, 255, 0.5)
+}
+.img-1 img{
+    width: 0.46rem;
+    height: 0.24rem;
+}
+.text-1,.text-2,.img-1,.broder-1{
+    position: absolute;
+}
+.text-1{
+    left:0.84rem
+}
+.text-2{
+    left: 2.24rem;
+    padding-bottom: 0.46rem;
+}
+.broder-1{
+    height: 0.02rem;
+    width: 4.2rem;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0.2), rgba(255,255,255,8),rgba(255,255,255,0.2)); /* Safari 5.1 - 6.0 */
+    /* background: -o-linear-gradient(right,  rgba(255,255,255,0.2), rgba(255,255,255,8),rgba(255,255,255,0.2)); Opera 11.1 - 12.0 */
+    /* background: -moz-linear-gradient(right,  rgba(255,255,255,0.2), rgba(255,255,255,8),rgba(255,255,255,0.2)); Firefox 3.6 - 15 */
+    /* background: linear-gradient(to right,  rgba(255,255,255,0.2), rgba(255,255,255,8),rgba(255,255,255,0.2)); 标准的语法（必须放在最后）  */
+    /* top:1.72rem;
+    left: 2.3rem;
+}
+ul li:first-child .broder-1{
+    top:1.62rem;
+}
+.img-1{
+    left: 1.1rem;
+    top:1.4rem;
+} */ 
+/**********************奖励说明*****/
+.caption{
+    position: relative;
+    margin-bottom: 0.26rem;
+}
+.img-2{
+    width: 4.68rem;
+    height: 0.68rem;
+    position: absolute;
+    top:0.3rem;
+    right: 0.45rem;
+}
+/**********caption-1***********/
+.caption-1{
+    background-color: rgb(228,82,74);
+    padding: 0.6rem;
+    margin: 0 0.25rem;
+    border: 1px none;
+    border-radius:0.14rem;
+    position: relative;
+}
+.caption-1 li{
+    border: 1px none;
+    font-size: 0.32rem;
+    color: rgb(99, 99, 99);
+    margin-top:0.05rem; 
+    height: 0.52rem;
+    text-align: center;
+    padding-top: 0.08rem;
+}
+.caption-1 li:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+    width: 2.65rem;
+    margin-left: 0;
+}
+.caption-1 li:nth-child(even){
+    background-color: rgb(255, 231, 77);
+    width: 3.65rem;
+    margin-right: 0;
+}
+.caption-1 li:first-child{
+    border-radius:0.1rem;
+    width: 2.65rem;
+    background-color: #672626;
+    color: rgb(255,255,255);
+}
+.caption-1 li:last-child{
+    margin-bottom: 0.07rem;
+}
+.caption-1 img{
+    position: absolute;
+}
+.caption-1 img:nth-child(2),.caption-1 img:nth-child(3),.caption-1 img:nth-child(4){
+    width: 0.14rem;
+    height: 0.66rem;
+    left:1.75rem;
+}
+.caption-1 img:nth-child(2){
+    top:1.25rem;
+}
+.caption-1 img:nth-child(3){
+    top:2.55rem;
+}
+.caption-1 img:nth-child(4){
+    top:3.85rem;
+}
+/****/
+.caption-1 img:nth-child(5){
+    width: 0.52rem;
+    height: 0.58rem;
+    top: 0.26rem;
+    right: 1.07rem;
+}
+.caption-1 img:nth-child(6){
+    width: 0.44rem;
+    height: 0.46rem;
+    top: 0.71rem;
+    right: 0.72rem;
+}
+.caption-1 img:nth-child(7){
+    width: 0.52rem;
+    height: 0.58rem;
+    top: 8.4rem;
+    left: 3.9rem;
+}
+.caption-1 img:nth-child(8){
+    width: 0.52rem;
+    height: 0.58rem;
+    top:5.3rem;
+    left: 1.74rem;
+}
+.caption-1 img:nth-child(9){
+    width: 0.42rem;
+    height: 0.46rem;
+    top:3.32rem;
+    right: 2.94rem;
+}
+.textDescription p{
+    font-size: 0.28rem;
+    color: rgb(255, 255, 255);
+    padding-top: 0.63rem;
+}
+.textDescription span{
+    color: rgb(255, 231, 77);
+}
+#explanation{
+    font-size: 0.24rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.75rem;
+    /* margin-bottom: 0.63rem */
+}

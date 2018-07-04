@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<!-- 页面描述 -->
+	<meta name="Description" content="天润网络" />
+	<!-- 页面关键词 -->
+	<meta name="Keywords" content="天润网络" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="baidu-site-verification" content="cNPo4xOObR" />
+	<!--禁止客户端缓存-->
+	<meta http-equiv="pragma" content="no-cache"/>
+    <title>天润驾校</title>
+	<!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="../public/css/index.css">
+</head>
+<body>
+    <header>
+        <h1>&nbsp;天润驾校，惠动全城，优惠多多!</h1>
+        <p>&nbsp;2018-04-05&emsp;天润驾校&emsp;</p><a href="#">天润驾校</a>
+        <div>
+            <img src="../public/images/banner.png" alt="">
+            <h2>快来天润驾校报名啦！</h2>
+            <p>天润驾校，惠动全城</p>
+        </div>
+    </header>
+    <!-- 正文 -->
+    <div class="text">
+        <div class="text-1">
+            <p>恭贺天润驾校模拟考场已建成，特惠全城</p>
+            <p>C1报名价<span>2480</span>元</p>
+            <p>C2报名价<span>2480</span>元</p>
+            <p>B2报名价<span>4500</span>元</p>
+        </div>
+        <div class="text-2">
+            <img src="../public/images/wx1.png">
+            <div class="text-2-1">
+                <p>心动不如行动</p>
+                <span>&emsp;即日起至4月报名底报名立减200元送精美礼品一份</span>
+                <p>&emsp;你还在犹豫吗？快来天润驾校报名吧！</p>
+            </div>
+        </div>
+        <div class="text-3">
+            <img src="../public/images/wx2.png">
+            <div class="text-3-1">
+                <p>&emsp;管理严格，数百名教练员均通过考核认证，素质过硬，<br>&emsp;一对一专业细致解决学员疑问轻松学车，快速拿证。</p>
+            </div>
+        </div>
+        <div class="text-3">
+            <img src="../public/images/wx3.png">
+            <div class="text-3-1">
+                <p>&emsp;我们有自己模拟考场，我们的模拟考试车（C1&nbsp;C2）现<br>&emsp;已对外营业。</p>
+            </div>
+        </div>
+        <div class="text-3">
+            <img src="../public/images/wx4.png">
+            <div class="text-3-1">
+                <p>&emsp;我们有专业的团队驾考行业中真正的良心教练，培训学<br>&emsp;员上千人，全程陪学员练车毕业后能做到独立自主驾驶。</p>
+            </div>
+        </div>
+        <div class="text-3">
+            <img src="../public/images/wx5.png">
+            <div class="text-3-1">
+                <p>&emsp;我们的专业教练对新学员讲解基础知识，可以让学员更<br>&emsp;快的了解和掌握。</p>
+            </div>
+        </div>
+        <div class="text-3">
+            <img src="../public/images/wx6.png">
+            <div class="text-3-1">
+                <p>&emsp;我们有自己模拟考场，我们的模拟考试车（C1&nbsp;C2）现<br>&emsp;已对外营业。</p>
+            </div>
+        </div>
+        <div class="text-4">
+            <p>咨询热线：4713399&emsp;4717799<br>4715333&emsp;4016789</p>
+            <p>总校报名地址：华州区新秦北路新华书店十字天润驾校营业厅</p>
+            <p>总校练车地址：华州区天润驾校（原棉绒厂院内）</p>
+        </div>
+        <img class="img-1" src="../public/images/wx.png">
+        <div class="text-5">
+                <p>关注天润驾校二维码，了解更多驾考咨询！</p>
+    </div>
+
+</body>
+    <script>
+        //designWidth:设计稿的实际宽度值，需要根据实际设置
+        //maxWidth:制作稿的最大宽度值，需要根据实际设置
+        //这段js的最后面有两个参数记得要设置，一个为设计稿实际宽度，一个为制作稿最大宽度，例如设计稿为750，最大宽度为750，则为(750,750);
+        (function(designWidth, maxWidth) {
+            var doc = document,
+            win = window,
+            docEl = doc.documentElement,
+            remStyle = document.createElement("style"),
+            tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                maxWidth = maxWidth || 540;
+                width>maxWidth && (width=maxWidth);
+                var rem = width * 100 / designWidth;
+                remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
+            }
+
+            if (docEl.firstElementChild) {
+                docEl.firstElementChild.appendChild(remStyle);
+            } else {
+                var wrap = doc.createElement("div");
+                wrap.appendChild(remStyle);
+                doc.write(wrap.innerHTML);
+                wrap = null;
+            }
+            //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
+            refreshRem();
+
+            win.addEventListener("resize", function() {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function(e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function(e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
+</html>
